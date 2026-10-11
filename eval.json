@@ -1,0 +1,124 @@
+[
+  {
+    "question": "What filing status options do I have?",
+    "expected_sections": [
+      "pub-17_chap_2.xhtml"
+    ],
+    "expected_phrase": "there are five filing statuses"
+  },
+  {
+    "question": "What do I need to gather before I start doing my taxes?",
+    "expected_sections": [
+      "pub-17_back_1.xhtml"
+    ],
+    "expected_phrase": "after receiving all your wage and earnings statements"
+  },
+  {
+    "question": "When do I need to file my 2025 taxes by?",
+    "expected_sections": [
+      "pub-17_chap_1.xhtml"
+    ],
+    "expected_phrase": "April 15, 2026, is the due date"
+  },
+  {
+    "question": "How much is the standard deduction for a single person for 2025?",
+    "expected_sections": [
+      "pub-17_front_1.xhtml",
+      "pub-17_chap_10.xhtml"
+    ],
+    "expected_phrase": "separately-$15,750"
+  },
+  {
+    "question": "What's the penalty if I file my return late?",
+    "expected_sections": [
+      "pub-17_chap_1.xhtml"
+    ],
+    "expected_phrase": "but not more than 25%"
+  },
+  {
+    "question": "How much extra do I owe if I don't pay my tax bill on time?",
+    "expected_sections": [
+      "pub-17_chap_1.xhtml"
+    ],
+    "expected_phrase": "(0.50%) of your unpaid taxes"
+  },
+  {
+    "question": "My spouse moved out. Can I file as head of household?",
+    "expected_sections": [
+      "pub-17_chap_2.xhtml"
+    ],
+    "expected_phrase": "last 6 months of the tax year"
+  },
+  {
+    "question": "Do I have to file a return if my only income is Social Security?",
+    "expected_sections": [
+      "pub-17_chap_1.xhtml"
+    ],
+    "expected_phrase": "$32,000 if married filing jointly"
+  },
+  {
+    "question": "Which of my kids qualify for the child tax credit?",
+    "expected_sections": [
+      "pub-17_chap_3.xhtml"
+    ],
+    "expected_phrase": "under age 17 at the end of the year"
+  },
+  {
+    "question": "My parents claim me as a dependent. Can I claim my own child?",
+    "expected_sections": [
+      "pub-17_chap_3.xhtml"
+    ],
+    "expected_phrase": "can't claim anyone else as a dependent"
+  },
+  {
+    "question": "How big a standard deduction can my teenager with a summer job take?",
+    "expected_sections": [
+      "pub-17_chap_1.xhtml",
+      "pub-17_chap_10.xhtml"
+    ],
+    "expected_phrase": "plus $450"
+  },
+  {
+    "question": "How much of my state and local taxes can I deduct?",
+    "expected_sections": [
+      "pub-17_chap_11.xhtml"
+    ],
+    "expected_phrase": "limited to $40,000"
+  },
+  {
+    "question": "Can I deduct sales tax rather than state income tax?",
+    "expected_sections": [
+      "pub-17_chap_11.xhtml"
+    ],
+    "expected_phrase": "instead of state and local income taxes"
+  },
+  {
+    "question": "When don't I have to make estimated tax payments for 2026?",
+    "expected_sections": [
+      "pub-17_chap_4.xhtml"
+    ],
+    "expected_phrase": "You had no tax liability for 2025"
+  },
+  {
+    "question": "How much can I put into my 401(k) for 2025?",
+    "expected_sections": [
+      "pub-17_front_1.xhtml",
+      "pub-17_chap_5.xhtml"
+    ],
+    "expected_phrase": "$23,500"
+  },
+  {
+    "question": "I applied my overpayment to next year's estimated tax. Can I still get it refunded?",
+    "expected_sections": [
+      "pub-17_chap_1.xhtml"
+    ],
+    "expected_phrase": "can't change your mind"
+  },
+  {
+    "question": "When is a nonresident alien's return due if no wages were withheld?",
+    "expected_sections": [
+      "pub-17_chap_1.xhtml"
+    ],
+    "expected_phrase": "June 15, 2026"
+  }
+]
