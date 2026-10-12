@@ -3,6 +3,7 @@ from ebooklib import epub
 from bs4 import BeautifulSoup
 import chromadb
 from sentence_transformers import SentenceTransformer
+from config import EMBED_MODEL
 
 BOOK_PATH:str = "data/your_federal_income_tax_p17.epub"
 
@@ -59,7 +60,7 @@ def main() -> None:
 
 
     # Embed and Store
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    model = SentenceTransformer(EMBED_MODEL)
     client = chromadb.PersistentClient(path="db")
 
     # Start fresh each time you re-run

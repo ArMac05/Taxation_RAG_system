@@ -3,15 +3,16 @@ import anthropic
 import chromadb
 from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
+from config import EMBED_MODEL, QUERY_PREFIX
 
 load_dotenv() # reads .env for API Key
 
 
 MODEL_NAME:str = "claude-sonnet-5-5" 
-TOP_k:int = 5
+TOP_k:int = 11
 
 
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
+embedder = SentenceTransformer(EMBED_MODEL)
 collection = chromadb.PersistentClient(path="db").get_collection("book")
 llm = anthropic.Anthropic(
     default_headers={
@@ -24,7 +25,7 @@ def retrieve(question:str, k:int=TOP_k) -> list[tuple[str, str]]:
         Return the top-k (section, text) pairs for a question.
     """
 
-    q_emb:list[list[float]] = embedder.encode([question]).tolist()
+    q_emb:list[list[float]] = embedder.encode([QUERY_PREFIX + question]).tolist()
     res = collection.query(query_embeddings=[list(map(float, q)) for q in q_emb], n_results=k)
     docs:list[str] = res["documents"][0] # type: ignore[index]
     metas = res["metadatas"][0] # type: ignore[index]
