@@ -225,3 +225,5 @@ __marimo__/
 db/
 data/
 .DS_Store
+
+.node_modules/
